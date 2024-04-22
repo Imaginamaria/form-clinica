@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Jugadoras</title>
+    <link rel='stylesheet' href='estilos.css'/>
+  </head>
+  <body>
+    <header class='jugadora-form-header'>
+      <h1>Registro de Jugadoras</h1>
+      <p><em>
+        ¿Queres participar de la clínica de hockey? Completa este formulario.</em></p>
+    </header>
+
+    <form action='' method='get' class='jugadora-form'>
+
+        <div class='form-row'>
+            <label for='nombre'>Nombre completo</label>
+            <input id='nombre' name='nombre' type='text'/>
+          </div>
+
+          <div class='form-row'>
+            <label for='email'>Email</label>
+            <input id='email'
+                   name='email'
+                   type='email'
+                   placeholder='email@ejemplo.com'/>
+          </div>
+
+          <fieldset class='legacy-form-row'>
+            <legend>Tipo de Entrenamiento</legend>
+            <input id='tipo-entrenamiento-1'
+                   name='tipo-entrenamiento'
+                   type='radio'
+                   value='habilidades' />
+            <label for='tipo-entrenamiento-1' class='radio-label'>Habilidades específicas</label>
+            <input id='tipo-entrenamiento-2'
+                   name='tipo-entrenamiento'
+                   type='radio'
+                   value='estrategias'
+                   checked />
+            <label for='tipo-entrenamiento-2' class='radio-label'>Estrategias de juego</label>
+          </fieldset>
+
+          <div class='form-row'>
+            <label for='t-shirt'>Talle de remera</label>
+            <select id='t-shirt' name='t-shirt'>
+              <option value='xs'>Extra Small</option>
+              <option value='s'>Small</option>
+              <option value='m'>Medium</option>
+              <option value='l'>Large</option>
+            </select>
+          </div>
+
+
+
+          <div class='form-row'>
+            <label for='expectativas'>Expectativas personales</label>
+            <textarea id='expectativas' name='expectativas'></textarea>
+            <div class='instrucciones'>Describe en no mas de 500 palabras cuales son tus expectativas personales.</div>
+          </div>
+
+
+
+      <div class='form-row'>
+        <label class='checkbox-label' for='informacion'>
+        <input id='informacion'
+               name='informacion'
+               type='checkbox'
+               value='enviar-informacion'/>
+        <span>Quiero recibir información sobre la clínica.</span>
+        </label>
+      </div>
+
+
+      <div class='form-row'>
+        <button>Inscribirme</button>
+      </div>
+
+        
+
+    </form>
+  </body>
+</html>
